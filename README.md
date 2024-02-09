@@ -1,5 +1,5 @@
 # Pre-Training Goal-based Models for Sample-Efficient Reinforcement Learning
-<div align="center>
+<div align="center">
 
 [[Paper]](https://openreview.net/forum?id=o2IEmeLL9r)
 [[Website]](https://sites.google.com/view/ptgm-iclr) 
