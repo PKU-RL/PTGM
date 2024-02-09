@@ -18,7 +18,7 @@ PTGM is a novel task-agnostic pre-training method that pre-trains goal-based mod
 
 - Upgrade the MineDojo package:
   - `pip uninstall minedojo`.
-  - Download the [upgraded MineDojo](https://github.com/PKU-RL/MCEnv).
+  - Install the [upgraded MineDojo](https://github.com/PKU-RL/MCEnv).
  
 
 - Download pre-trained models for MineCraft: run `bash downloads.sh` to download the MineCLIP model and the VPT-2x model.
