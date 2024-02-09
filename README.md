@@ -24,24 +24,6 @@ PTGM is a novel task-agnostic pre-training method that pre-trains goal-based mod
 - Download pre-trained models for MineCraft: run `bash downloads.sh` to download the MineCLIP model and the VPT-2x model.
 
 
-
-## Folders
-VPT: VPT official code. Model and policy for VPT.
-
-sb3_vpt: VPT-adapter model, policy and replay buffer in stable_baseline3
-
-steve1: agent modification and other functions for Steve-1
-
-tasks: MineDojo wrappers for RL
-
-downloads: download models and datasets
-
-hierarchical: a high-level controller outputs img-goal embeddings for Steve-1
-
-goal_prior: cluster codebook for high-level controller; train a goal prior
-
-
-
 ## Download and pre-process the dataset
 ```
 python steve1/data/generation/convert_from_contractor.py \
