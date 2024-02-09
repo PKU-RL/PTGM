@@ -1,0 +1,64 @@
+### downstream tasks for RL
+
+cobblestone:
+  task_id: harvest_1_cobblestone_with_wooden_pickaxe
+  sim: minedojo
+  fast_reset: 20
+  clip_specs:
+    prompts: ['obtain cobblestone']
+  sim_specs:
+    specified_biome: plains
+  terminal_specs:
+    max_steps: 500
+  freeze_equipped: 1
+
+spider:
+  task_id: combat_spider_plains_diamond_armors_diamond_sword_shield
+  sim: minedojo
+  terminal_specs:
+    max_steps: 500
+  sim_specs:
+    initial_inventory:
+      mainhand:
+        name: diamond_sword
+  fast_reset: 20
+  clip_specs:
+    prompts: ['combat a spider in night plains']
+  freeze_equipped: 1
+
+log_plains:
+  task_id: harvest_1_log_plains
+  sim: minedojo
+  fast_reset: 20
+  clip_specs:
+    prompts: ['cut a tree']
+  terminal_specs:
+    max_steps: 2000
+
+water_bucket:
+  task_id: "harvest"
+  sim: minedojo
+  terminal_specs:
+    max_steps: 2000
+  sim_specs:
+    specified_biome: plains
+    target_names: "water_bucket"
+    target_quantities: 1
+    reward_weights: 1
+    initial_inventory:
+      mainhand:
+        name: bucket
+  clip_specs:
+    prompts: ['find water, obtain water bucket']
+  fast_reset: 20
+  freeze_equipped: 1
+
+iron_ore:
+  task_id: harvest_1_iron_ore_with_stone_pickaxe
+  sim: minedojo
+  fast_reset: 20
+  clip_specs:
+    prompts: ['obtain iron ore']
+  terminal_specs:
+    max_steps: 2000
+  freeze_equipped: 1

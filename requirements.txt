@@ -1,0 +1,7 @@
+tensorboard==2.10.1
+gym==0.21.0
+gym3==0.3.3
+torch==2.0.1
+sb3-contrib==1.6.2
+stable-baselines3==1.6.2
+x-transformers==0.27.1
