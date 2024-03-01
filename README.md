@@ -58,7 +58,7 @@ python goal_prior/generate_codebook.py \
 
 - Train the goal prior model: run `bash goal_prior/train_goal_prior.sh`.
 
-**If you don't want to download the large dataset and train from scratch**, download the pre-trained models and goal clusters [here](https://disk.pku.edu.cn/link/AAFD7852E16FFB43E09FB2BD34E7B41E7B).
+**If you don't want to download the dataset and train from scratch**, download the pre-trained models and goal clusters [here](https://disk.pku.edu.cn/link/AAFD7852E16FFB43E09FB2BD34E7B41E7B).
 
 
 ## Train high-level policies for downstream tasks with PPO
