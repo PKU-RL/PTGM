@@ -42,7 +42,7 @@ Split training and validation set:
 python steve1/data/sampling/generate_sampling.py \
 --output_dir downloads/samplings \
 --val_frames 10_000 \
---train_frames 35_000_000
+--train_frames 30_000_000
 ```
 If you do not download the whole dataset, set `--train_frames` to the actual number of frames for training.
 
