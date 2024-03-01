@@ -1,12 +1,10 @@
 # Pre-Training Goal-based Models for Sample-Efficient Reinforcement Learning
-<div align="center">
 
-[[Paper]](https://openreview.net/forum?id=o2IEmeLL9r)
-[[Website]](https://sites.google.com/view/ptgm-iclr) 
+Official implementation of our [[Paper]](https://openreview.net/forum?id=o2IEmeLL9r) at **ICLR 2024 (oral)**. 
+Here is the [[Project Page]](https://sites.google.com/view/ptgm-iclr).
 
 ![](fig/ptgm.png)
 
-</div>
 
 PTGM is a novel task-agnostic pre-training method that pre-trains goal-based models to accelerate downstream RL. PTGM involves pre-training a low-level, goal-conditioned policy and training a high-level policy to generate goals for subsequent RL tasks. To address the challenges posed by the high-dimensional goal space, while simultaneously maintaining the agent's capability to accomplish various skills, we propose clustering goals in the dataset to form a discrete high-level action space. Additionally, a goal prior model is pre-trained to regularize the behavior of the high-level policy in RL, enhancing sample efficiency and learning stability. 
 
@@ -83,6 +81,7 @@ python ppo_highlevel.py \
 
 
 ## Citation
+If you find this code useful, please cite our paper:
 ```bibtex
 @inproceedings{
 yuan2024pretraining,
@@ -93,3 +92,4 @@ year={2024},
 url={https://openreview.net/forum?id=o2IEmeLL9r}
 }
 ```
+Our implementation is based on [VPT](https://github.com/openai/Video-Pre-Training) and [Steve-1](https://github.com/Shalev-Lifshitz/STEVE-1). You may also cite these works.
